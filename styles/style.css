@@ -59,7 +59,7 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
+  width: 710px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
@@ -180,6 +180,10 @@ ol {
   z-index: -1;
 }
 
+.content__list-item {
+  padding-right: 4px;
+}
+
 .content__card-link {
   display: block;
   padding: 2px 0 2px 2px;
@@ -227,10 +231,13 @@ ol {
 }
 
 .search-form__label:has(:focus-visible),
-.button:focus-visible,
-.content__card-link:focus-visible {
+.button:focus-visible {
   outline: 1px solid white;
   outline-offset: 1px;
+}
+
+.content__list-item:has(:focus-visible) {
+  outline: 1px solid white;
 }
 
 .search-form__checkbox-list .search-form__label:hover,
