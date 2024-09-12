@@ -129,7 +129,6 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid white;
-  position: relative;
 }
 
 .search-form__submit-button {
@@ -183,9 +182,9 @@ ol {
 
 .content__card-link {
   display: block;
+  padding: 2px 0 2px 2px;
   color: inherit;
   text-decoration: none;
-  position: relative;
 }
 
 .content__video-card {
@@ -198,10 +197,12 @@ ol {
 }
 
 .content__video-card-title {
+  display: block;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   line-height: 100%;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -211,6 +212,7 @@ ol {
 .content__video-card-thumbnail {
   height: 104px;
   width: 190px;
+  transform: translateX(2px);
 }
 
 .more-button {
@@ -248,7 +250,7 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
 .search-form__checkbox:active + .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
+  display: block;
   margin: 1px;
   width: 15px;
   height: 15px;
@@ -259,13 +261,7 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link:active::after,
-.content__card-link_current::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 2px);
-  height: calc(100% + 4px);
+.content__card-link:active,
+.content__card-link_current {
   background-color: #545050;
-  inset: -2px 0 0 -1px;
-  z-index: -1;
 }
