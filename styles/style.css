@@ -266,7 +266,6 @@ ol {
   width: calc(100% - 2px);
   height: calc(100% + 4px);
   background-color: #545050;
-  top: -2px;
-  left: -1px;
+  inset: -2px 0 0 -1px;
   z-index: -1;
 }
