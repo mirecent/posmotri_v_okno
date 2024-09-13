@@ -167,7 +167,6 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
   height: 300px;
   padding: 2px;
   overflow: auto;
@@ -182,6 +181,10 @@ ol {
 
 .content__list-item {
   padding-right: 4px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
