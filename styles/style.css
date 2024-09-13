@@ -170,13 +170,14 @@ ol {
   height: 300px;
   padding: 2px;
   overflow: auto;
-  scrollbar-width: none;
   position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, .3) transparent;
 }
 
 .preloader ~ .content__list-item {
   /* без этого свойства элементы карточки будут лезть поверх загрузки */
-  z-index: -1;
+  display: none;
 }
 
 .content__list-item {
