@@ -198,6 +198,7 @@ ol {
 .content__video-card {
   display: flex;
   align-items: start;
+  height: 104px;
 }
 
 .content__video-card-description-container {
@@ -218,8 +219,9 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  height: 104px;
-  width: 190px;
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
   transform: translateX(2px);
 }
 
